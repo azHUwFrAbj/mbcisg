@@ -89,7 +89,7 @@ void report(const ExperimentRecords &experiment_records) {
 
     conditional_report(experiment_records.bbf_batch, "BBF Batch");
 
-    conditional_report(experiment_records.bbf_advance_with_cache, "BBF Adv Cache");
+    conditional_report(experiment_records.bbf_advance_with_cache, "BBF Adv");
 
 
     std::cout << "=======================================\n";

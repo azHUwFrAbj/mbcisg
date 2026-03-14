@@ -7,6 +7,14 @@ Codebase and experiement scripts for this submission, where
 
 
 To reproduce the experiments:
+
+* Requirement:
+  * Ubuntu 22.04 (or other recent Linux distribution)
+  * x86_64 architecture
+  * GNU GCC ≥ 11 (with C++20 support)
+  * CMake ≥ 3.22
+  * Python 3 (for dataset generation scripts)
+
 * Compile the source code with the following command:
     ```bash
     mkdir build
@@ -17,5 +25,6 @@ To reproduce the experiments:
 * Run the corresponding experiment using the scripts in `exp`:
     * To reproduce the update efficiency experiment, run `./update.sh`;
     * To reproduce the query efficiency experiment, run `./query.sh`;
+    * To reproduce the search experiment, run `./search.sh`;
     * To reproduce the memory footprint efficiency experiment, run `./index_size.sh`;
 * The experimental data will be written to the directory specified in the scripts, which is `damp` by default.

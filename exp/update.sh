@@ -9,7 +9,7 @@ DIR_PATH=../dat
 DAMP_DIR=../damp
 
 
-WINDOW=1000000
+WINDOW=-1
 STRIDE_COUNT=10000
 PCT=0.2 # control the window set, which = $PCT * #Edge
 
