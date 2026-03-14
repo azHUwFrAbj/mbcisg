@@ -5,14 +5,13 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG -march=native -flto ")
 
-
 set(CMAKE_CXX_FLAGS_DEBUG "-g -O0 -fno-inline -fsanitize=address -fno-omit-frame-pointer")
 
 include_directories(..)
 
 add_subdirectory(holm_lichtenberg_fdbcc)
 
-set(
+set(Src
         utils.cpp
         utils.h
         EdgeMap.cpp
@@ -45,7 +44,7 @@ set(
         BbfNode.h
 )
 
-add_executable(exp experiment_main.cpp ${Src})
+add_executable(exp ${Src} experiment_main.cpp)
 
 target_link_libraries(exp PRIVATE HolmLib)
 
